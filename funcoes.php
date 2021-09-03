@@ -13,7 +13,7 @@ function buscarFuncionario($funcionarios, $nome) {
     $funcionariosFiltro= [];
 
     foreach ($funcionarios as $funcionario) {
-        if ($funcionario-> nome == $nome) {
+        if ($funcionario->first_name == $nome) {
             $funcionariosFiltro[] = $funcionario;
         }
     }

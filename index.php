@@ -6,7 +6,7 @@ require("./funcoes.php");
 $funcionarios = lerArquivo("empresaX.json");
 
 if (isset($_GET["buscarFuncionario"])) {
-    $funcionario = buscarFuncionario($funcionario, $_GET["buscarFuncionario"]);
+    $funcionarios = buscarFuncionario($funcionarios, $_GET["buscarFuncionario"]);
 }
 
 
@@ -23,8 +23,7 @@ if (isset($_GET["buscarFuncionario"])) {
 </head>
 <body>
 <form>
-    <input type="text"  name="buscarFuncionario" value="<?= isset($_GET["buscarFuncionario"]) ?
-                                                            $_GET["buscarFuncionario"] : "" ?>" placeholder="Buscar Funcionario">
+    <input type="text"  name="buscarFuncionario" value="<?= isset($_GET["buscarFuncionario"]) ? $_GET["buscarFuncionario"] : "" ?>" placeholder="Buscar Funcionario">
     <button>Buscar</button>
 </form>
 
