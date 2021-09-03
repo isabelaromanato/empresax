@@ -5,6 +5,8 @@ require("./funcoes.php");
 
 $funcionarios = lerArquivo("empresaX.json");
 
+ echo count($funcionarios);
+
 if (isset($_GET["buscarFuncionario"])) {
     $funcionarios = buscarFuncionario($funcionarios, $_GET["buscarFuncionario"]);
 }

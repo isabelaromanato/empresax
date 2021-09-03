@@ -19,3 +19,4 @@ function buscarFuncionario($funcionarios, $nome) {
     }
     return $funcionariosFiltro;
 }
+
