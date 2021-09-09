@@ -1,5 +1,5 @@
 <?php
-function lerArquivo($nomeArquivo) {
+function lerArquivo(string $nomeArquivo) {
 
     $arquivo = file_get_contents($nomeArquivo);
 
@@ -20,3 +20,8 @@ function buscarFuncionario($funcionarios, $nome) {
     return $funcionariosFiltro;
 }
 
+function addNovoUsuario (array $user) {
+    $db = json_decode(file_get_contents('empresaX.json'), true);
+    $db = $user;
+    file_put_contents('empresaX.json', json_encode($db));
+}
