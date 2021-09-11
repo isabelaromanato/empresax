@@ -24,7 +24,7 @@ if (isset($_GET["buscarFuncionario"])) {
 </head>
 
 <body>
-    <h1>Funcionários da empresa X</h1>
+    <h1>Funcionários da EMPRESA X</h1>
     <p>A empresa conta com <em> <?= count($funcionarios) ?> </em></p>
 
     <form>

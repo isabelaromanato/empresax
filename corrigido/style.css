@@ -3,7 +3,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #dfe4ed;
+    background-color: #d7ebde;
 }
 
 span{
@@ -12,7 +12,7 @@ span{
 
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #0e2754;
+    color: #0e8841;
 }
 
 form{
@@ -38,7 +38,7 @@ button{
     border-radius: 5px;
     border-color: transparent;
     color: white;
-    background-color:  #0e2754;
+    background-color:  #0e8841;
 }
 
 #btnAddFuncionario{
